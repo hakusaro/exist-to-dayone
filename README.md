@@ -4,8 +4,8 @@
 
 ## Requirements
 
-* You must have an active Exist.io account.
-* You must have Day One installed and setup.
+* You must have an active [Exist.io](https://exist.io/) account.
+* You must have [Day One](https://itunes.apple.com/us/app/day-one/id422304217?mt=12) installed and setup.
 * You must have [Ruby](https://rvm.io/rvm/install) installed.
 
 ## Caveats
@@ -15,7 +15,7 @@
 
 ## Run
 
-* ```$ git clone [repopath]```
+* ```$ git clone https://github.com/nicatronTg/exist-to-dayone.git```
 * ```$ cd exist-to-dayone```
 * ```$ rvm install 2.0```
 * ```$ gem install bundler```
