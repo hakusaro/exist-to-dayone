@@ -39,7 +39,6 @@ count = 0
 moods['results'].each do |mood|
   if mood['value'] != nil
     date = Time.parse(mood['date']) + (21 * 60 * 60) # Midnight + 21 hours = 9pm, like Exist's prompt times
-    puts "Time was originally #{Time.parse(mood['date'])} and is now #{date}"
     val = mood['value']
     rating_stars = ""
     val.to_i.times do
@@ -52,8 +51,8 @@ moods['results'].each do |mood|
       rating_stars += "☆"
     end
 
-    # entry = DayOne::Entry.new("Today's #Mood\nRating: #{rating_stars}", :tags => ["Mood"], :creation_date => date)
-    # entry.create!
+    entry = DayOne::Entry.new("Today's #Mood\nRating: #{rating_stars}", :tags => ["Mood"], :creation_date => date)
+    entry.create!
     count += 1
   end
 end
