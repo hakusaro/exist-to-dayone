@@ -1,5 +1,5 @@
 #coding: utf-8
-#Fixes dates that were improeprly saved at midnight if you ran it before I fixed the bug
+#Fixes dates that were improperly saved at midnight if you ran it before I fixed the bug
 
 require 'rb-dayone'
 
